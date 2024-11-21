@@ -1,0 +1,80 @@
+Here's a list of the dependencies for your code and instructions to install them:
+
+---
+
+### **Dependencies**
+
+#### **Python Packages**
+1. **`os`** and **`re`**
+   - Standard library modules; no installation required.
+
+2. **`nltk`**  
+   - For text processing and natural language tasks.
+   - Includes tokenization, stopword handling, and lemmatization.
+
+3. **`transformers`**  
+   - Provides pre-trained NLP models such as `distilbert`.
+
+4. **`spacy`**  
+   - Natural language processing library for tokenization and named entity recognition.
+
+5. **`customtkinter`**  
+   - A modern theme for `tkinter` with enhanced styling.
+
+6. **`tkinter`**  
+   - Standard library for GUI development; pre-installed with Python.
+
+7. **`pdfplumber`**  
+   - For extracting text from PDF files.
+
+8. **`selenium`**  
+   - For web automation and scraping.
+
+9. **`webdriver_manager`**  
+   - Automatically manages the installation of web drivers for Selenium.
+
+10. **`threading`**  
+    - Standard library for managing threads.
+
+---
+
+#### **Installation Commands**
+
+You can install all the required packages using the following pip commands:
+
+```bash
+pip install nltk transformers spacy customtkinter pdfplumber selenium webdriver-manager
+```
+
+---
+
+### **Post-Installation Steps**
+
+1. **Download NLTK Data**  
+   Ensure required corpora and models are downloaded:
+   ```python
+   import nltk
+   nltk.download("punkt")
+   nltk.download("stopwords")
+   nltk.download("wordnet")
+   ```
+
+2. **Download spaCy Model**  
+   Download the `en_core_web_sm` model for `spaCy`:
+   ```bash
+   python -m spacy download en_core_web_sm
+   ```
+
+3. **Install ChromeDriver for Selenium**  
+   - The `webdriver_manager` package will handle this automatically.
+
+---
+
+#### **Verify Installation**
+
+To check if all dependencies are installed:
+```bash
+pip list | grep -E "nltk|transformers|spacy|customtkinter|pdfplumber|selenium|webdriver-manager"
+```
+
+If you encounter issues, ensure you are using the correct Python version (recommended: **Python 3.7+**).
